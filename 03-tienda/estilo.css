@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f9afaf;
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+    text-align: center;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #EF217E;
+	transition: all .3s;
+}
+
+.logo{
+    display: flex;
+    justify-content:center
+}
+
+.banner{
+    display:flex;
+    justify-content: center;
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.productos{
+    width: 100%;
+    max-width: 1200px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.productos .fotos{
+    width: 360px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.productos .fotos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productos .fotos img{
+    width: 360px;
+    height: 480px;
+}
+
+.productos .fotos h4{
+    padding: 7px;
+    font-size: 20px;
+    font-style:italic;
+    color:#EF217E;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.productos .fotos p{
+    padding: 0 1rem;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-small-img img{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    margin: 10 px 10px 15px;
+    cursor: pointer;
+}
+
+.product-small-img{
+    width: 8%;
+    display: flex;
+}
+
+.img-container img{
+    height: 460px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.img-container{
+    margin-left: 350px;
+    padding: 10px;
+    width: 100hv;
+}
+
+.img-container h2{
+    font-size: 35px;
+    font-style:italic;
+    color:#EF217E;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-container p{
+    padding: 0 1rem;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-container h3{
+    font-size: 40px;
+    font-style:italic;
+    color:#fff;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.descripcion{
+	width: 200px;
+    float:left;
+	margin: 5px auto;
+	background: #fff;
+    text-align: center;
+}
+
+.descripcion ul{
+	list-style: none;
+}
+
+.descripcion > li{
+	position: relative;
+	display: inline-block;
+}
+
+.descripcion li:hover{
+	color: #EF217E;
+	transition: all .3s;
+}
+
+.texto{
+	position: absolute;
+	background: #333333;
+	width: 400%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.texto li{
+	display: block;
+	padding: 5px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.descripcion li:hover .texto{
+	visibility: visible;
+	opacity: 1;
+}
+
+.yo{
+    width: 100%;
+    max-width: 410px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    float: left;
+    margin-left: 100px;
+}
+
+.yo .nat{
+    width: 360px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.yo .nat img{
+    width: 360px;
+    height: 480px;
+}
+
+.yo .nat h4{
+    padding: 7px;
+    font-size: 20px;
+    font-style:italic;
+    color:#EF217E;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.yo .nat p{
+    padding: 0 1rem;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.biografia p{
+    text-align: justify;
+    margin-right: 200px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+form{
+    background-color: #EF217E;
+    border-radius: 3px;
+    color:#333333;
+    font-size: 12px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 230px;
+}
+
+.text area{
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;   
+}
+
+.field:focus{
+    border-color: #18A383;
+}
+
+.center-content{
+    text-align: center;
+}
