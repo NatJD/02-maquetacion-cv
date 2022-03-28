@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Musical</title>
+    <link rel="stylesheet" href="diseño.css">
+    <script src="reproductor.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <video muted autoplay loop>
+        <source  src="./video/corazon.mp4" type="video/mp4">
+    </video>
+
+    <div class="capa"></div>
+
+<div class="reproductor">
+    <div class="borde">
+        <div class="detalles">
+            <div class="now-playing">PLAYING x OF y</div>
+            <div class="track-art"></div>
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+        </div>
+
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+        </div>
+
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+        </div>
+
+        <div class="botones">
+            <div class="random-track" onclick="randomTrack()">
+                <i class="fas fa-random fa-2x" title="random"></i>
+            </div>
+            <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="repeat-track" onclick="repeatTrack()">
+                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                </div>
+                </div>
+                <div class="music-list">
+                    <div class="header">
+                        <div class="row">
+                            <i class="list material-icons">queue_music</i>
+                            <span>Lista de Música</span>
+                        </div>
+                    </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Plastic Beach - Gorillaz</p>
+                            <p>Álbum: Plastic Beach</p>
+                            <p>Duración: 03:47</p>
+                        </li>
+                        <li>
+                            <p>On Melancholy Hill - Gorilaz</p>
+                            <p>Álbum: Plastic Beach</p>
+                            <p>Duración: 03:53</p>
+                        </li>
+                        <li>
+                            <p>Chiquitita - ABBA</p>
+                            <p>Voules-Vous</p>
+                            <p>Duración: 05:30</p>
+                        </li>
+                        <li>
+                            <p>Dancing Queen - ABBA</p>
+                            <p>Álbum: Arrival</p>
+                            <p>Duración: 03:50</p>
+                        </li>
+                        <li>
+                            <p>Happier - Olivia Rodrigo</p>
+                            <p>Álbum: Sour</p>
+                            <p>Duración: 02:56</p>
+                        </li>
+                        <li>
+                            <p>Favourite Crime - Olivia Rodrigo</p>
+                            <p>Álbum: Sour</p>
+                            <p>Duración: 02:33</p>
+                        </li>
+                        <li>
+                            <p>Rosa Náutica - Enjambre</p>
+                            <p>Álbum: ProAño</p>
+                            <p>Duración: 03:52</p>
+                        </li>
+                        <li>
+                            <p>Cobarde - Enjambre</p>
+                            <p>Álbum: Daltónico</p>
+                            <p>Duración: 04:18</p>
+                        </li>
+                        <li>
+                            <p>The Great Gig in the Sky - Pink Floyd</p>
+                            <p>Álbum: The Dark Side of the Moon</p>
+                            <p>Duración: 04:44</p>
+                        </li>
+                        <li>
+                            <p>Shine On You Crazy Diamond - Pink Floyd</p>
+                            <p>Álbum: Wish You Were Here</p>
+                            <p>Duración: 13:32</p>
+                        </li>
+                        <li>
+                            <p>Amor de Siempre - Cuco</p>
+                            <p>Álbum: Wannabewithu</p>
+                            <p>Duración: 05:22</p>
+                        </li>
+                        <li>
+                            <p>We Had to End It - Cuco</p>
+                            <p>Álbum: Songs4u</p>
+                            <p>Duración: 05:49</p>
+                        </li>
+                        <li>
+                            <p>Washing Machine Heart - Mitski</p>
+                            <p>Álbum: Be the Cowboy</p>
+                            <p>Duración: 02:08</p>
+                        </li>
+                        <li>
+                            <p>Nobody - Mitski</p>
+                            <p>Álbum: Be the Cowboy</p>
+                            <p>Duración: 03:12</p>
+                        </li>
+                        <li>
+                            <p>Kiss or Death - Monsta X</p>
+                            <p>Álbum: Kiss or Death</p>
+                            <p>Duración: 03:53</p>
+                        </li>
+                        <li>
+                            <p>You Problem - Monsta X</p>
+                            <p>álbum: The Dreaming</p>
+                            <p>Duración: 03:19</p>
+                        </li>
+                        <li>
+                            <p>Spring - Rammstein</p>
+                            <p>Álbum: Ronserot</p>
+                            <p>Duración: 05:30</p>
+                        </li>
+                        <li>
+                            <p>Engel - Ramstein</p>
+                            <p>Álbum: Sechsucht</p>
+                            <p>Duración: 04:25</p>
+                        </li>
+                        <li>
+                            <p>Stay With Me - Miki Matsubara</p>
+                            <p>Álbum: Pocket Park</p>
+                            <p>Duración: 05:12</p>
+                        </li>
+                        <li>
+                            <p>Plastic Love - Mariya Takeuchi</p>
+                            <p>Álbum: Plasctic Love </p>
+                            <p>Duración: 07:55</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>  
+    </div>
+</div>
+
+
+
+</body>
+</html>
