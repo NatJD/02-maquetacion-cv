@@ -41,19 +41,19 @@ const music_list = [
         music : 'audio/Chiquitita.mp3'
     },
     {
-        img : 'album/Arrival.jpg',
+        img : 'album/Arrival1.jpg',
         name : 'Dancing Queen',
         artist : 'Arrival, ABBA',
         music : 'audio/DancingQueen.mp3'
     }, 
     {
-        img : 'album/Sour.jpg',
+        img : 'album/Sour1.jpg',
         name : 'Happier',
         artist : 'Sour, Olivia Rodrigo',
         music : 'audio/Happier.mp3'
     },
     {
-        img : 'album/Sour.jpg',
+        img : 'album/Sour1.jpg',
         name : 'Favorite Crime',
         artist : 'Sour, Olivia Rodrigo',
         music : 'audio/FavoriteCrime.mp3'
